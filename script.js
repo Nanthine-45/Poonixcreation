@@ -4,14 +4,21 @@ const CONTACT_EMAIL = "hello@poonixcreation.com";
 const INSTAGRAM_URL = "https://instagram.com/"; // Replace with your Instagram profile URL.
 
 const products = [
-  {id:1,name:"Daisy Mini Tote",category:"Bags",price:599,description:"A cheerful everyday mini bag",image:"teddy.webp",tag:"Bestseller",bg:"#f3dfe5"},
-  {id:2,name:"Pastel Bloom Bouquet",category:"Flowers",price:349,description:"Forever flowers, made by hand",emoji:"💐",tag:"Handmade",bg:"#eee6f4"},
-  {id:3,name:"Tiny Tulip Keychain",category:"Keychains",price:149,description:"A tiny pop of colour for your keys",emoji:"🌷",tag:"Cute pick",bg:"#f8e8d7"},
-  {id:4,name:"Cloud Nine Shoulder Bag",category:"Bags",price:799,description:"Soft texture, sweet little details",emoji:"🎒",tag:"New",bg:"#e4e9dc"},
-  {id:5,name:"Sunshine Crochet Daisy",category:"Flowers",price:199,description:"A little sunshine that never fades",emoji:"🌼",tag:"",bg:"#f6edcf"},
-  {id:6,name:"Berry Sweet Charm",category:"Keychains",price:129,description:"A playful handmade bag charm",emoji:"🍓",tag:"",bg:"#f5dfe0"},
-  {id:7,name:"Gift Box of Blooms",category:"Gifts",price:499,description:"A thoughtful gift for someone lovely",emoji:"🎁",tag:"Gift idea",bg:"#e9e2f0"},
-  {id:8,name:"Cozy Crochet Pouch",category:"Gifts",price:399,description:"A sweet home for little essentials",emoji:"🧶",tag:"",bg:"#e7e9df"}
+{id:1,name:"Daisy Mini Tote",category:"Bags",price:599,description:"A cheerful everyday mini bag",image:"teddy.webp",tag:"Bestseller",bg:"#f3dfe5"},
+
+{id:2,name:"Pastel Bloom Bouquet",category:"Flowers",price:349,description:"Forever flowers, made by hand",image:"flower.webp",tag:"Handmade",bg:"#eee6f4"},
+
+{id:3,name:"Tiny Tulip Keychain",category:"Keychains",price:149,description:"A tiny pop of colour for your keys",image:"tulip.webp",tag:"Cute pick",bg:"#f8e8d7"},
+
+{id:4,name:"Cloud Nine Shoulder Bag",category:"Bags",price:799,description:"Soft texture, sweet little details",image:"bag.webp",tag:"New",bg:"#e4e9dc"},
+
+{id:5,name:"Sunshine Crochet Daisy",category:"Flowers",price:199,description:"A little sunshine that never fades",image:"daisy.webp",tag:"",bg:"#f6edcf"},
+
+{id:6,name:"Berry Sweet Charm",category:"Keychains",price:129,description:"A playful handmade bag charm",image:"berry.webp",tag:"",bg:"#f5dfe0"},
+
+{id:7,name:"Gift Box of Blooms",category:"Gifts",price:499,description:"A thoughtful gift for someone lovely",image:"gift.webp",tag:"Gift idea",bg:"#e9e2f0"},
+
+{id:8,name:"Cozy Crochet Pouch",category:"Gifts",price:399,description:"A sweet home for little essentials",image:"pouch.webp",tag:"",bg:"#e7e9df"}
 ];
 let cart = JSON.parse(localStorage.getItem("poonixCart") || "[]");
 let activeFilter = "All";
