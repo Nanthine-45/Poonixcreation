@@ -34,7 +34,10 @@ function renderProducts(){
     <article class="product-card">
       <div class="product-image" style="background:${p.bg}">
         ${p.tag ? `<span class="product-tag">${p.tag}</span>` : ""}
-        <span class="product-emoji" aria-hidden="true">${p.emoji}</span>
+        ${p.image
+  ? `<img src="${p.image}" alt="${p.name}" class="product-photo">`
+  : `<span class="product-emoji">${p.emoji || ""}</span>`
+}
         <button class="quick-add" data-add="${p.id}" aria-label="Add ${p.name} to bag">+</button>
       </div>
       <div class="product-info"><h3>${p.name}</h3><p>${p.description}</p><span class="product-price">${money(p.price)}</span></div>
