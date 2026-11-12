@@ -4,7 +4,7 @@ const CONTACT_EMAIL = "hello@poonixcreation.com";
 const INSTAGRAM_URL = "https://instagram.com/"; // Replace with your Instagram profile URL.
 
 const products = [
-  {id:1,name:"Daisy Mini Tote",category:"Bags",price:599,description:"A cheerful everyday mini bag",image:"teddy.webp",tag:"Bestseller",bg:"#f3dfe5"},
+  {id:1,name:"Daisy Mini Tote",category:"Bags",price:599,description:"A cheerful everyday mini bag",image:"Poonixcreation/teddy.webp",tag:"Bestseller",bg:"#f3dfe5"},
   {id:2,name:"Pastel Bloom Bouquet",category:"Flowers",price:349,description:"Forever flowers, made by hand",emoji:"💐",tag:"Handmade",bg:"#eee6f4"},
   {id:3,name:"Tiny Tulip Keychain",category:"Keychains",price:149,description:"A tiny pop of colour for your keys",emoji:"🌷",tag:"Cute pick",bg:"#f8e8d7"},
   {id:4,name:"Cloud Nine Shoulder Bag",category:"Bags",price:799,description:"Soft texture, sweet little details",emoji:"🎒",tag:"New",bg:"#e4e9dc"},
