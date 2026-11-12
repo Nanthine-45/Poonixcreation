@@ -51,7 +51,10 @@ function renderCart(){
   document.getElementById("cartTitleCount").textContent=`(${count})`;
   document.getElementById("cartTotal").textContent=money(total);
   document.getElementById("cartItems").innerHTML=cart.length?cart.map(x=>{const p=products.find(p=>p.id===x.id);return `
-    <div class="cart-row"><div class="cart-thumb" style="background:${p.bg}">${p.emoji}</div>
+    <div class="cart-row"><div class="cart-thumb" style="background:${p.bg}">${p.image
+  ? `<img src="${p.image}" alt="${p.name}" class="product-photo">`
+  : `<span>${p.emoji || ""}</span>`
+}</div>
     <div><h4>${p.name}</h4><small>${money(p.price)} each</small><div class="qty-controls"><button data-qty="${p.id}" data-delta="-1" aria-label="Decrease quantity">−</button><span>${x.qty}</span><button data-qty="${p.id}" data-delta="1" aria-label="Increase quantity">+</button></div></div>
     <button class="remove-item" data-remove="${p.id}" aria-label="Remove ${p.name}">×</button></div>`}).join(""):`<div class="empty-state">Your bag is waiting for something lovely ♡</div>`;
   document.getElementById("checkoutButton").disabled=!cart.length;
